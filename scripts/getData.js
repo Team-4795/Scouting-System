@@ -11,6 +11,8 @@ if(isNaN(config.teamNumber)) {
     throw new TypeError('The team number must be set as a valid number');
 }
 
+if(config.defaultStats === undefined || config.statTypes === undefined) throw new Error('Both defaultStats and statTypes must be defined');
+
 for(const stat in config.defaultStats) if(config.statTypes[stat] === undefined) throw new Error(`The type of stat ${stat} is not defined`);
 
 request({
