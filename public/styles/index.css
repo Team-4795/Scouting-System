@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@media (max-aspect-ratio: 4/3) {
+    .match {
+        width: 100% !important;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.match {
+    display: inline-block;
+    width: 50%;
+    min-height: 5vh;
+    text-decoration: none;
+    color: black;
+}
+
+.match:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.team {
+    float: right;
+    padding: 1vh;
+    min-width: 2.5em;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.own {
+    background-color: rgb(100, 255, 150);
+}
+
+.own:hover {
+    background-color: rgb(100, 255, 100);
+}

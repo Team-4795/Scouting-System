@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+tr {
+	height: 5vh;
+}
+
+td {
+	width: 5%;
+	word-wrap: break-word;
+	border: 1px solid rgb(200, 200, 200);
+}
+
+#sorter {
+	float: right;
+}
+
+#teams {
+	width: 100%;
+}
+
+.header {
+	font-weight: bold;
+}

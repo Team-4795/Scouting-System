@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Authenticate - Eastbots Scouting</title>
+        <link rel="stylesheet" href="styles/authenticate.css" type="text/css"/>
+        <%- include('../partials/header') %>
+    </head>
+    <body>
+    	<h1>Eastbots Scouting System</h1>
+   		<form method="POST" action="/authenticate">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Submit</button>   
+        </form>
+    </body>
+</html>

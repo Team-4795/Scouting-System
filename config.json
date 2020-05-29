@@ -1,0 +1,36 @@
+{
+	"tbaKey": "your key here",
+	"teamNumber": 4795,
+	"password": "eastbots",
+	"eventId": "2020ncpem",
+	"defaultStats": {
+	    "scoutName": "",
+	    "leftLine": false,
+	    "autoLowBalls": 0,
+	    "autoHighBalls": 0,
+	    "autoInnerBalls": 0,
+	    "lowBalls": 0,
+	    "highBalls": 0,
+	    "innerBalls": 0,
+	    "climb": false,
+	    "park": false,
+	    "disabled": false,
+	    "seriousViolation": false,
+	    "notes": ""
+	},
+	"statTypes": {
+	    "scoutName": "matchOnly",
+	    "leftLine": "total",
+	    "autoLowBalls": "average",
+	    "autoHighBalls": "average",
+	    "autoInnerBalls": "average",
+	    "lowBalls": "average",
+	    "highBalls": "average",
+	    "innerBalls": "average",
+	    "climb": "total",
+	    "park": "total",
+	    "disabled": "total",
+	    "seriousViolation": "total",
+	    "notes": "total"
+	}
+}
