@@ -154,7 +154,7 @@ app.use((request, response) => {
 });
 
 server.on('request', app);
-server.listen(80, () => {});
+server.listen(process.env.PORT || 80, () => {});
 
 setInterval(() => {
 	function updateTeam(team) {
