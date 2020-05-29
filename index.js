@@ -191,7 +191,11 @@ setInterval(() => {
 	if(updated) {
 		updated = false;
 		database.teams = database.teams.map(team => {
-			team.stats = {...config.defaultStats};
+			team.stats = (() => {
+	            let stats = {};
+	            for(const stat in config.defaultStats) if(config.statTypes[stat] !== 'matchOnly') stats[stat] = config.defaultStats[stat];
+	            return stats;
+	        })();
 			team.enabledMatches = 0;
 			return team;
 		});
