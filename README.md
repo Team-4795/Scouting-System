@@ -2,6 +2,7 @@
 Team 4795's online scouting system, written in Node.js with Express. Supports all game types and is easily customizable with little programming knowledge. Spreadsheet exports available for advanced data analysis.
 
 # Quick Start
+You can [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/Team-4795/Scouting-System) or follow the steps below:
 1. Ensure that Node.js and NPM are installed
 2. Download the repository and install the modules with `npm install`
 3. Open `config.json` and enter your preferred settings
@@ -9,7 +10,7 @@ Team 4795's online scouting system, written in Node.js with Express. Supports al
 5. Start the server with `sudo npm start`
 
 # How it Works
-The scouting system provides an online interface for recording match data and analyzing teams throughout FRC events. Before qualifications start, the match schedule it fetched from [The Blue Alliance API](https://thebluealliance.com "The Blue Alliance") and saved to a database. This database is then used to generate pages for each match which can be used by scouts to record information about each team's performance. All of the data is then consolidated by the system into pages for each team, as well as a page to compare all of the teams. The site functions offline and syncs with the server once the user reconnects, allowing it to be used at competitions without WiFi or cellular data. Background syncing requires modern web technologies, and we recommend using the latest version of Chrome to prevent unexpected results or incompatibilites.
+The scouting system provides an online interface for recording match data and analyzing teams throughout FRC events. Before qualifications start, the match schedule it fetched from [The Blue Alliance API](https://thebluealliance.com "The Blue Alliance") and saved to a database. This database is then used to generate pages for each match which can be used by scouts to record information about each team's performance. All of the data is then consolidated by the system into pages for each team, as well as a page to compare all of the teams. The site functions offline and syncs with the server once the user reconnects, allowing it to be used at competitions without WiFi or cellular data. Background syncing requires modern web technologies, so we recommend using the latest version of Chrome to prevent unexpected results or incompatibilites.
 
 # Configuration
 The system can be configured to suit your team's needs with the `config.json` file. It has six main settings that must be provided as well as six optional settings for advanced analysis. Each setting is defined as a property of the object inside of the configuration file. A [Blue Alliance API Key](https://www.thebluealliance.com/apidocs/v3 "The Blue Alliance") must be set under `tbaKey`, as well as your team number as `teamNumber` and the Blue Alliance ID of the event as `eventId`. If the option `password` is set, users will be required to enter it to access the system. The data points to be collected during matches are specified by the `defaultStats` property. This property must be set as an object and each property in it will be a stat to be recorded during the match. The default value and type of each stat will be whatever is provided under `defaultStats`. Currently supported data types are strings, booleans, and numbers. The way consolidated match data will be displayed on the stats page and individual team pages is determined under by the `statTypes` property. Like `defaultStats`, every stat has its own property set to the desired type. The current stat types are matchOnly, total, average, and multiple. Stats set as matchOnly do not appear on the stats page or the team pages, and multiple shows the total of each each value collected, for example three level two climbs and one level three climb. If the stat `disabled` is set as a boolean, the system will exclude matches where it is true from stat averages. There is an example configuration in the config file that you can try, excluding an API key.
@@ -32,7 +33,7 @@ All of the data gathered about the event is stored in `data/database.json`. It i
 > All teams in the event have a dedicated page with a compiled list of their match data as well as overall stats about the team.
 
 >## Statistics Table
-> Data about all of the teams is used to compute statistics which are displayed on this page. The teams can be sorted based on this data to select alliance partners. The table can be downloaded as a CSV file.
+> Data about all of the teams is used to compute statistics which are displayed on this page. The teams can be sorted based on this data to select alliance partners. Stats are calculated every ten seconds, therefore changes can take a moment to appear. The table can be downloaded as a CSV file.
 
 # About
 This is an ongoing project with the goal of making it easier for both new and experienced teams to scout events without having to spend a ton of time creating a custom system for any specific game. If your team has any trouble getting the site running, please create an issue and we will try to assist you. This project was started because [Jake](https://github.com/JakeBoggs) got tired of frantically searching for team's datasheets before each match and decided to create a better way to do it.
@@ -44,7 +45,6 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Refresh offline page
 - [ ] Error checking (config, disabled, etc.)
 - [ ] Make stats line break work
-- [ ] Document disabled stat
 
 - [ ] Custom stat names
 - [ ] Add CSV downloads to team pages
@@ -76,3 +76,4 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Make documentation language consistent with TBA (keys instead of IDs)
 - [ ] Turn getAbilities into a library
 - [ ] Websocket reconnect
+- [ ] Increase saving effiecy
