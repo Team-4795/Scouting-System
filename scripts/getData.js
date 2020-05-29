@@ -7,6 +7,12 @@ let database = {
     'matches': []
 };
 
+if(isNaN(config.teamNumber)) {
+    throw new TypeError('The team number must be set as a valid number');
+}
+
+for(const stat in config.defaultStats) if(config.statTypes[stat] === undefined) throw new Error(`The type of stat ${stat} is not defined`);
+
 request({
     'url': `https://www.thebluealliance.com/api/v3/event/${config.eventId}/teams/simple`,
     'headers': {
@@ -15,6 +21,8 @@ request({
     'method': 'GET',
     'json': true
 }, (error, response, body) => {
+    if(body.Error !== undefined) throw new Error('Event ID or API key invalid');
+
     database.teams = body.map(team => ({
         ...team,
         'stats': (() => {
@@ -24,6 +32,7 @@ request({
         })(),
         'additionalData': config.additionalTeamData
     }));
+
     request({
         'url': `https://www.thebluealliance.com/api/v3/event/${config.eventId}/matches/simple`,
         'headers': {

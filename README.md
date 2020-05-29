@@ -2,7 +2,7 @@
 Team 4795's online scouting system, written in Node.js with Express. Supports all game types and is easily customizable with little programming knowledge. Spreadsheet exports available for advanced data analysis.
 
 # Quick Start
-You can [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/Team-4795/Scouting-System) or follow the steps below:
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/Team-4795/Scouting-System) or follow the steps below:
 1. Ensure that Node.js and NPM are installed
 2. Download the repository and install the modules with `npm install`
 3. Open `config.json` and enter your preferred settings
@@ -43,7 +43,6 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Bootstrap screen sizes
 - [ ] Highlight table rows when hovered
 - [ ] Refresh offline page
-- [ ] Error checking (config, disabled, etc.)
 - [ ] Make stats line break work
 
 - [ ] Custom stat names
