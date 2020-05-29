@@ -19,19 +19,19 @@ All of the data gathered about the event is stored in `data/database.json`. It i
 
 # Site Pages
 
-> ## Authentication Page
+>## Authentication Page
 > A simple login page which is shown to users the first time they visit the site, and requires them to provide a password to access the system. Once authenticated, they will not be shown the page again for ten days.
 
-> ## Matches List
+>## Matches List
 > This pages functions as the main part of the site, containing links to all of the matches and the statistics page. The matches your team is playing in are highlighted in green. Users arrive on this page the first time they authenticate.
 
-> ## Match Pages
+>## Match Pages
 > Each match has its own page which scouts can use to record data for that match. The page automatically saves and syncs with the server. When connected to the internet, the page updates live and users can view changes as they happen. There are three input types, a checkbox for boolean stats, plus and minus buttons for numbers, and textboxes for strings.
 
-> ## Team Pages
+>## Team Pages
 > All teams in the event have a dedicated page with a compiled list of their match data as well as overall stats about the team.
 
-> ## Statistics Table
+>## Statistics Table
 > Data about all of the teams is used to compute statistics which are displayed on this page. The teams can be sorted based on this data to select alliance partners. The table can be downloaded as a CSV file.
 
 # About
