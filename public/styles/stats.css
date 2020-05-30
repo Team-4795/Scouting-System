@@ -1,33 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-body {
-	font-family: 'Roboto', sans-serif;
-    background-color: rgb(240, 240, 240);
+td a {
+	text-decoration: underline;
 }
 
-table {
-	width: 100%;
-	table-layout: fixed;
-}
-
-tr {
-	height: 5vh;
-}
-
-td {
-	width: 5%;
-	word-wrap: break-word;
-	border: 1px solid rgb(200, 200, 200);
-}
-
-#sorter {
+#menu {
 	float: right;
 }
 
-#teams {
-	width: 100%;
+#menu button, select {
+	border: 1px solid lightgray;
+	background-color: white;
 }
 
-.header {
-	font-weight: bold;
+#menu button:hover {
+	background-color: rgb(220, 220, 220);
 }

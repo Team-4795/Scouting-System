@@ -11,13 +11,15 @@ let stringifedTeams = JSON.stringify(database.teams);
 let stringifedMatches = JSON.stringify(database.matches);
 let updated = false;
 
-let app = express();
-app.set('view engine', 'ejs');
-
 let server = http.createServer();
 let websocket = new WebSocket.Server({server});
 
 websocket.on('connection', ws => {});
+
+let app = express();
+
+app.disable('x-powered-by');
+app.set('view engine', 'ejs');
 
 app.use(session({
 	'cookie': {

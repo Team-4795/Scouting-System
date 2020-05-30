@@ -16,6 +16,7 @@ let filesToCache = [
 	'scripts/stats.js',
 	'scripts/store.js',
 	'scripts/team.js',
+	'styles/main.css',
 	'styles/index.css',
 	'styles/match.css',
 	'styles/stats.css',

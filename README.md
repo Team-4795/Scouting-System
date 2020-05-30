@@ -39,12 +39,15 @@ All of the data gathered about the event is stored in `data/database.json`. It i
 This is an ongoing project with the goal of making it easier for both new and experienced teams to scout events without having to spend a ton of time creating a custom system for any specific game. If your team has any trouble getting the site running, please create an issue and we will try to assist you. This project was started because [Jake](https://github.com/JakeBoggs) got tired of frantically searching for team's datasheets before each match and decided to create a better way to do it.
 
 # To do
-- [ ] Use proper table head, make borders consistent
-- [ ] Bootstrap screen sizes
-- [ ] Highlight table rows when hovered
 - [ ] Refresh offline page
 - [ ] Make stats line break work
+- [ ] Modernize syntax
+- [ ] Screenshots in documentation
 
+- [ ] Stats offline functionality
+- [ ] Stats page auto update
+- [ ] Clearfix
+- [ ] Navbar
 - [ ] Custom stat names
 - [ ] Add CSV downloads to team pages
 - [ ] Make database attributes consistent
@@ -53,7 +56,7 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Add additional teams data if provided
 - [ ] Rename config settings
 - [ ] Mass syncing
-- [ ] Manual match schedule entry
+- [ ] Manual match entry
 - [ ] Match stats hover
 - [ ] Fix in place stats header
 - [ ] Generate heatmap
@@ -69,10 +72,12 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Manifest file
 - [ ] Dark and light modes
 - [ ] Fallback when service workers are unavailable
-- [ ] Screenshots in documentation
 - [ ] Allow additional data to be edited
 - [ ] Find a better solution than disabled stat for averages
 - [ ] Make documentation language consistent with TBA (keys instead of IDs)
 - [ ] Turn getAbilities into a library
 - [ ] Websocket reconnect
-- [ ] Increase saving effiecy
+- [ ] Increase saving efficiency
+- [ ] AWS deployment guide
+- [ ] Code formatting
+- [ ] PWA

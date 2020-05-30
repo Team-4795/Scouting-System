@@ -2,23 +2,30 @@
 <html>
     <head>
         <title>Stats - Eastbots Scouting</title>
-        <link rel="stylesheet" href="../styles/stats.css" type="text/css"/>
+        <link rel="stylesheet" href="/styles/stats.css" type="text/css"/>
         <%- include('../partials/header') %>
     </head>
     <body>
-        <a href="/">Home</a>
-        <div id="sorter">
-	        Sort by 
-	        <select id="order">
-	        	<option>most</option>
-	        	<option>least</option>
-	        </select>
-	        <select id="attribute"></select>
-	        <button id="sort">Sort!</button>
-	        <button id="reset">Reset!</button>
-            <button id="download">Download as CSV</button>
-	    </div>
-        <div id="teams"></div>
+        <div class="container-fluid">
+            <a href="/">Home</a>
+            <div id="menu" class="mt-1 mb-1">
+                Sort by 
+                <select id="order">
+                    <option>most</option>
+                    <option>least</option>
+                </select>
+                <select id="attribute"></select>
+                <button id="sort">Sort</button>
+                <button id="reset">Reset</button>
+                <button id="download">Download as CSV</button>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-sm">
+                    <thead id="teams-head"></thead>
+                    <tbody id="teams-body"></tbody>
+                </table>
+            </div>
+        </div>
         <%- include('../partials/footer') %>
         <script src="../scripts/stats.js"></script>
     </body>

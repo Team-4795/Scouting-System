@@ -1,40 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-@media (max-aspect-ratio: 4/3) {
-	button {
-		width: 6vw !important;
-		height: 6vw !important;
-	}
-
-	input[type="checkbox"] {
-		width: 6vw !important;
-		height: 6vw !important;
-	}
-
-	.cell {
-		width: 25% !important;
-	}
-
-	.input {
-		height: 6vw !important;
-		max-height: 6vw !important;
-	}
-}
-
-body {
-	font-family: 'Roboto', sans-serif;
-    background-color: rgb(240, 240, 240);
-}
-
 h3 {
-	text-align: center;
 	margin: 0px;
 }
 
 button {
-	width: 4vw;
-	height: 4vw;
-	cursor: pointer;
+	width: 50px;
+	height: 50px;
 	font-size: x-large;
 	border: 1px solid rgb(200, 200, 200);
 	background-color: rgb(250, 250, 250);
@@ -45,15 +15,12 @@ button:hover {
 }
 
 input[type="checkbox"] {
-	width: 4vw;
-	height: 4vw;
-	box-sizing: border-box;
+	width: 50px;
+	height: 50px;
 }
 
 .wrapper {
-	margin-top: 1vw;
 	width: 100%;
-	display: inline-block;
 	color: white;
 }
 
@@ -73,33 +40,26 @@ input[type="checkbox"] {
 
 .wrapper h3 a {
 	color: white;
+	text-decoration: underline;
 }
 
 .cell {
-	vertical-align: top;
-	padding: 1vh;
-	width: 20%;
-	display: inline-block;
-	word-wrap: break-word;
 	font-weight: bold;
-	box-sizing: border-box;
 }
 
 .red {
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: red;
 }
 
 .blue {
-    background-color: rgba(0, 0, 255, 0.7);
+    background-color: blue;
 }
 
 .input {
 	width: 90%;
-	max-width: 90%;
-	height: 4vw;
-	max-height: 4vw;
+	min-height: 50px;
+	max-height: 50px;
 	font-family: 'Roboto', sans-serif;
-	box-sizing: border-box;
 }
 
 .increase {

@@ -3,18 +3,8 @@ let attributes = [];
 let csv = '';
 
 function display() {
-    document.getElementById('teams').innerHTML = '';
-    let table = document.createElement('table');
-    let header = document.createElement('tr');
-    header.className = 'header';
-    header.innerHTML = '<td>Team</td>';
-    attributes = [];
-    for(const stat in teams[0].stats) {
-        let label = document.createElement('td');
-        label.innerText = stat;
-        header.appendChild(label);
-    }
-    table.appendChild(header);
+    document.getElementById('teams-body').innerHTML = '';
+    
     teams.forEach(team => {
         let values = document.createElement('tr');
         values.innerHTML = '<td><a href="/team/' + team.team_number + '"><b>' + team.team_number + '</b></a></td>';
@@ -33,9 +23,8 @@ function display() {
             }
             values.appendChild(value);
         }
-        table.appendChild(values);
+        document.getElementById('teams-body').appendChild(values);
     });
-    document.getElementById('teams').appendChild(table);
 }
 
 function sort() {
@@ -66,6 +55,16 @@ fetch('/api/teams').then(response => {
         for(const stat in team.stats) stats.push(JSON.stringify(team.stats[stat]).replace(/\n/g, ' '));
         return team.team_number + ',' + stats.join(',');
     }).join('\n');
+
+    let header = document.createElement('tr');
+    header.innerHTML = '<th>Team</th>';
+    attributes = [];
+    for(const stat in teams[0].stats) {
+        let label = document.createElement('th');
+        label.innerText = stat;
+        header.appendChild(label);
+    }
+    document.getElementById('teams-head').appendChild(header);
 
     display();
 

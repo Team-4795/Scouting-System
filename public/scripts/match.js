@@ -49,11 +49,13 @@ navigator.serviceWorker.ready.then(registration => fetch('/api/match/' + matchNu
         let wrapper = document.createElement('div');
         let table = document.createElement('div');
         let inputs = document.createElement('div');
-        wrapper.className = alliance + ' wrapper';
+        wrapper.className = alliance + ' wrapper mt-1';
         wrapper.innerHTML = '<h3><a href="/team/' + team.number + '">' + team.number + '</a></h3>';
+        table.className = 'container-fluid';
+        inputs.className = 'row m-0';
         for(const stat in team.stats) {
             let container = document.createElement('div');
-            container.className = 'cell';
+            container.className = 'cell col-6 col-md-4 col-lg-3 p-0';
             container.innerHTML = stat + '<br>';
             if(team.stats[stat] === true || team.stats[stat] === false) {
                 let input = document.createElement('input');

@@ -2,14 +2,16 @@
 <html>
     <head>
         <title>Authenticate - Eastbots Scouting</title>
-        <link rel="stylesheet" href="styles/authenticate.css" type="text/css"/>
         <%- include('../partials/header') %>
+        <link rel="stylesheet" href="/styles/authenticate.css" type="text/css">
     </head>
     <body>
-    	<h1>Eastbots Scouting System</h1>
-   		<form method="POST" action="/authenticate">
-            <input type="password" name="password" placeholder="Password">
-            <button type="submit">Submit</button>   
-        </form>
+        <div class="container-fluid">
+        	<h1>Eastbots Scouting System</h1>
+       		<form method="POST" action="/authenticate">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Submit</button>   
+            </form>
+        </div>
     </body>
 </html>
