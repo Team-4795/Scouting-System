@@ -46,7 +46,6 @@ This is an ongoing project with the goal of making it easier for both new and ex
 
 - [ ] Stats offline functionality
 - [ ] Stats page auto update
-- [ ] Clearfix
 - [ ] Navbar
 - [ ] Custom stat names
 - [ ] Add CSV downloads to team pages
@@ -81,3 +80,4 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] AWS deployment guide
 - [ ] Code formatting
 - [ ] PWA
+- [ ] Fix additional data table

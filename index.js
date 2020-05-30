@@ -138,7 +138,7 @@ app.post('/api/update-match-attribute', (request, response) => {
 			'value': data.value
 		});
 		websocket.clients.forEach(client => {
-			// Typing may be an issue
+			// Don't send to the sending client
 			client.send(update);
 		});
 	    response.json({
