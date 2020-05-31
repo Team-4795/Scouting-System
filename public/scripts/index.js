@@ -2,7 +2,7 @@ function createMatchLink(match, teamNumber, row) {
     let link = document.createElement('a');
     link.className = 'col-lg p-0 ' + (match.red.filter(team => team.number === teamNumber).length > 0 || match.blue.filter(team => team.number === teamNumber).length > 0 ? 'own ' : '') + 'match';
     link.href = '/match/' + match.match_number;
-    link.innerText = 'Match ' + match.match_number;
+    link.innerHTML = '<span>Match ' + match.match_number + '</span>';
     match.red.forEach(team => {
         let box = document.createElement('div');
         box.className = 'red team';

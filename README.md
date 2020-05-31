@@ -35,17 +35,32 @@ All of the data gathered about the event is stored in `data/database.json`. It i
 >## Statistics Table
 > Data about all of the teams is used to compute statistics which are displayed on this page. The teams can be sorted based on this data to select alliance partners. Stats are calculated every ten seconds, therefore changes can take a moment to appear. The table can be downloaded as a CSV file.
 
+# Competition Guide
+
+>## Before the Event
+> Before the competition, the server must be configured and running so that the scouts can access it. This is important because each scout must visit the site and authenticate while they still have an internet connection, so that it can be cached and used inside the event. There are many ways to host the server, we recommend using either [Glitch](https://glitch.com/pricing "Glitch") (paid membership), [Amazon Web Services](https://aws.amazon.com/getting-started/hands-on/deploy-nodejs-web-app/ "Amazon Web Services"), or [Linode](https://www.linode.com/products/standard-linodes/ "Linode"), however there are many other hosting providers that will work as well. Glitch is useful for testing, but the free version is not recommended for use at competitions because it has rate limits and turns off when it becomes inactive.
+
+>## Upon Arrival / During Matches
+> Once the match schedule is released, it must be entered into the system using `node scripts/getData.js`. After that is done, the scouts can start collecting data.
+
+>## After Qualifications
+> All scouts must connect to the internet so that the data they collected can be synced to the server, either at the hotel or through a WiFi hotspot away from the competition area. Now the aggregated data can viewed on the site and be used for alliance selection.
+
 # About
-This is an ongoing project with the goal of making it easier for both new and experienced teams to scout events without having to spend a ton of time creating a custom system for any specific game. If your team has any trouble getting the site running, please create an issue and we will try to assist you. This project was started because [Jake](https://github.com/JakeBoggs) got tired of frantically searching for team's datasheets before each match and decided to create a better way to do it.
+This is an ongoing project with the goal of making it easier for both new and experienced teams to scout events without having to spend a ton of time creating a custom system for any specific game. If your team has any trouble getting the site running, please create an issue and we will try to assist you. This project was started because [Jake](https://github.com/JakeBoggs "JakeBoggs") got tired of frantically searching for team's datasheets before each match and decided to create a better way to do it.
 
 # To do
-- [ ] Refresh offline page
-- [ ] Make stats line break work
+- [ ] UI for fetch data and configuration
+- [ ] Manual match entry
+- [ ] Team and stats offline functionality
+- [ ] Stats page auto update
 - [ ] Modernize syntax
 - [ ] Screenshots in documentation
+- [ ] Fix additional data table
 
-- [ ] Stats offline functionality
-- [ ] Stats page auto update
+- [ ] Hover effect for team numbers in matches page
+- [ ] Refresh offline page
+- [ ] Make stats line break work
 - [ ] Navbar
 - [ ] Custom stat names
 - [ ] Add CSV downloads to team pages
@@ -55,7 +70,6 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Add additional teams data if provided
 - [ ] Rename config settings
 - [ ] Mass syncing
-- [ ] Manual match entry
 - [ ] Match stats hover
 - [ ] Fix in place stats header
 - [ ] Generate heatmap
@@ -77,7 +91,5 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Turn getAbilities into a library
 - [ ] Websocket reconnect
 - [ ] Increase saving efficiency
-- [ ] AWS deployment guide
 - [ ] Code formatting
 - [ ] PWA
-- [ ] Fix additional data table
