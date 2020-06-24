@@ -1,3 +1,10 @@
+th {
+	position: sticky;
+	top: -1px;
+	background-color: white;
+	box-shadow: inset 0px 0.5px #dee2e6, 0px 0.5px #dee2e6;
+}
+
 td a {
 	text-decoration: underline;
 }

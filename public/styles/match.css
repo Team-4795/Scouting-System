@@ -37,6 +37,7 @@ input[type="checkbox"] {
 .wrapper {
 	width: 100%;
 	color: white;
+	border-radius: 5px;
 }
 
 /*.wrapper[target="true"] .cell {
@@ -63,11 +64,11 @@ input[type="checkbox"] {
 }
 
 .red {
-    background-color: red;
+    background-color: rgb(255, 75, 75);
 }
 
 .blue {
-    background-color: blue;
+    background-color: rgb(75, 75, 255);
 }
 
 .input {

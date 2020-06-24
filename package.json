@@ -22,5 +22,8 @@
     "start": "node index.js"
   },
   "author": "Jake Boggs",
+  "repository": {
+    "url": "https://github.com/Team-4795/Scouting-System"
+  },
   "license": "MIT"
 }

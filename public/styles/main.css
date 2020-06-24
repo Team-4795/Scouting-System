@@ -2,9 +2,12 @@
 
 body {
     font-family: 'Roboto', sans-serif !important;
-    background-color: rgb(240, 240, 240);
 }
 
 h1, h2, h3 {
     text-align: center;
+}
+
+select {
+	cursor: pointer;
 }
