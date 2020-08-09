@@ -15,7 +15,7 @@ const scanner = new QrScanner(document.getElementById('video-stream'), async cod
 	lastCode = code;
 	code = JSON.parse(code);
 
-	$('#scanning-toast').toast('show');
+	$('#scanner-toast').toast('show');
 
 	if(code.type === 'teams') {
 
@@ -63,7 +63,8 @@ const scanner = new QrScanner(document.getElementById('video-stream'), async cod
 // Stop button or disable scan button once used
 document.getElementById('scan').addEventListener('click', () => scanner.start());
 
-document.getElementById('scanning-toast').parentNode.insertBefore(scanner.$canvas, document.getElementById('scanning-toast'));
+document.getElementById('scanner-toast').parentNode.insertBefore(scanner.$canvas, document.getElementById('scanner-toast'));
+document.getElementById('scanner-toast').previousSibling.id = 'scanner-canvas';
 
 document.getElementById('share').addEventListener('click', async () => {
 	$('#sharing-toast').toast('hide');

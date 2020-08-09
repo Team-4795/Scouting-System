@@ -12,3 +12,7 @@
 #video-stream {
 	display: none;
 }
+
+#scanner-canvas {
+	max-width: 100%;
+}

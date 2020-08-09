@@ -60,7 +60,6 @@ This is an ongoing project with the goal of making it easier for both new and ex
 
 # To do
 - [ ] Check admin access at API
-- [ ] Recache API data after new request
 
 - [ ] Service worker 404
 - [ ] Share individual matches

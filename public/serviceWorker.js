@@ -176,27 +176,15 @@ self.addEventListener('activate', event => {
 });
 // Use comparison instead of includes
 // Check request types for GET and POST
-self.addEventListener('fetch', event => {
-	// Make redundant later
-	if(event.request.url.includes('/api/team-number')) return event.respondWith(fetch(event.request, {
-    	'credentials': 'same-origin'
-    }).then(response => caches.open(cacheName).then(cache => {
-		cache.put(event.request.url, response.clone());
-		return response;
-	})).catch(error => caches.open(cacheName).then(cache => cache.match(event.request))));
-
-	if(event.request.url.includes('/api/default-stats')) return event.respondWith(fetch(event.request, {
-    	'credentials': 'same-origin'
-    }).then(response => caches.open(cacheName).then(cache => {
-		cache.put(event.request.url, response.clone());
-		return response;
-	})).catch(error => caches.open(cacheName).then(cache => cache.match(event.request))));
-	
+self.addEventListener('fetch', event => {	
 	if(event.request.url.includes('/api/matches')) return event.respondWith((async () => {
 	    let matches = await fetch(event.request, {
 	    	'credentials': 'same-origin'
 	    }).catch(error => null);
-	    if(matches !== null) return matches;
+	    if(matches !== null) {
+	    	await caches.open(cacheName).then(cache => cache.put('/api/matches', matches.clone()));
+	    	return matches;
+	    }
 
 	    matches = await getMatches();
 
@@ -295,15 +283,13 @@ self.addEventListener('fetch', event => {
 	    let teams = await fetch(event.request, {
 	    	'credentials': 'same-origin'
 	    }).catch(error => null);
-	    if(teams !== null) return teams;
+	    if(teams !== null) {
+	    	await caches.open(cacheName).then(cache => cache.put('/api/teams', teams.clone()));
+	    	return teams;
+	    }
 
-	    // let matches = await getText(caches.match('/api/matches'));
-	    // matches = JSON.parse(matches);
-	    teams = await calculateStats();
+	    await calculateStats();
 	    teams = await getJSON(caches.match('/api/teams'));
-	    // let teamNumber = Number(event.request.url.split('/').slice(-1));
-	    // Security check
-	    // team = teams.filter(team => team.number === teamNumber)[0];
 
 	    return new Response(JSON.stringify(teams), {
 	        'headers': {
@@ -311,9 +297,9 @@ self.addEventListener('fetch', event => {
 	        }
 	    });
 	})());
-	// Update once everything else is finished
+
 	event.respondWith(fetch(event.request).then(response => caches.open(cacheName).then(cache => {
-		if(!event.request.url.includes('/api/')) cache.put(event.request.url, response.clone());
+		cache.put(event.request.url, response.clone());
 		return response;
 	})).catch(error => caches.open(cacheName).then(cache => cache.match(event.request))));
 });
