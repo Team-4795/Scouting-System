@@ -53,7 +53,7 @@ All of the data gathered about the event is stored in `data/database.json`. It i
 > All scouts must connect to the internet so that the data they collected can be synced to the server. When internet is unavailable, this can be done with QR codes. Now the aggregated data can viewed on the site and be used for alliance selection.
 
 # About
-This is an ongoing project with the goal of making it easier for both new and experienced teams to scout events without having to spend a ton of time creating a custom system for any specific game. If your team has any trouble getting the site running, please create an issue and we will try to assist you. This project was started because [Jake](https://github.com/JakeBoggs "JakeBoggs") got tired of frantically searching for team's datasheets before each match and decided to create a better way to do it. I hope that 
+This is an ongoing project with the goal of making it easier for both new and experienced teams to scout events without having to spend a ton of time creating a custom system for any specific game. If your team has any trouble getting the site running, please create an issue and we will try to assist you. This project was started because [Jake](https://github.com/JakeBoggs "JakeBoggs") got tired of frantically searching for team's datasheets before each match and decided to create a better way to do it.
 
 # To do
 - [ ] Check admin access at API
