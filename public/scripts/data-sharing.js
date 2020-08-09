@@ -46,6 +46,7 @@ const scanner = new QrScanner(document.getElementById('video-stream'), async cod
 		navigator.serviceWorker.ready.then(registration => store.changes('readwrite').then(changes => {
             for(let change of code.data) {
 				change = {
+					'type': 'match-attribute',
 					'match': change[0],
 					'alliance': change[1],
 					'team': change[2],
