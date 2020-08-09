@@ -231,79 +231,6 @@ self.addEventListener('fetch', event => {
 	        }
 	    });
 	})());
-
-	// if(event.request.url.includes('/api/matches/create')) return event.respondWith((async () => {
-	//     let result = await fetch(event.request.clone(), {
-	//     	'credentials': 'same-origin'
-	//     }).catch(error => null);
-	//     if(result !== null) return result;
-
-	//     let matches = await getText(caches.match('/api/matches'));
-	//     matches = JSON.parse(matches);
-	//     let defaultStats = await getText(caches.match('/api/default-stats'));
-	//     defaultStats = JSON.parse(defaultStats);
-	//     let match = await event.request.json();
-	//     let matchNumber = match.matchNumber;
-	// 	let redAlliance = match.redAlliance;
-	// 	let blueAlliance = match.blueAlliance;
-	// 	// Security checks
-	// 	matchNumber = Number(matchNumber);
-	// 	redAlliance = redAlliance.replace(/\s/g, '').split(',').map(number => ({
-	// 		'number': Number(number),
-	// 		'stats': defaultStats
-	// 	}));
-	// 	blueAlliance = blueAlliance.replace(/\s/g, '').split(',').map(number => ({
-	// 		'number': Number(number),
-	// 		'stats': defaultStats
-	// 	}));
-	// 	matches.push({
-	// 		'number': matchNumber,
-	// 		'red': redAlliance,
-	// 		'blue': blueAlliance
-	// 	});
-	// 	matches = matches.sort((a, b) => a.number - b.number);
-	// 	let matchesCache = new Response(JSON.stringify(matches), {
-	//         'headers': {
-	//             'Content-Type': 'application/json'
-	//         }
-	//     });
-	// 	caches.open(cacheName).then(cache => cache.put('/api/matches', matchesCache));
-
-	//     return new Response(JSON.stringify({
-	//     	'result': 'success'
-	//     }), {
-	//         'headers': {
-	//             'Content-Type': 'application/json'
-	//         }
-	//     });
-	// })());
-
-	// if(event.request.url.includes('/api/matches/set')) return event.respondWith((async () => {
-	//  	let updatedMatch = await event.request.json();
-	//  	let matches = await getText(caches.match('/api/matches'));
-	//     matches = JSON.parse(matches);
-	//     let matchIndex = matches.map(match => match.number).indexOf(updatedMatch.number);
-	//     if(matchIndex === -1) {
-	//     	matches.push(updatedMatch);
-	//     } else {
-	//     	matches[matchIndex] = updatedMatch;
-	//     }
-	//     matches = matches.sort((a, b) => a.number - b.number);
-	//  	let matchesCache = new Response(JSON.stringify(matches), {
-	//         'headers': {
-	//             'Content-Type': 'application/json'
-	//         }
-	//     });
-	// 	caches.open(cacheName).then(cache => cache.put('/api/matches', matchesCache));
-
-	//     return new Response(JSON.stringify({
-	//     	'result': 'success'
-	//     }), {
-	//         'headers': {
-	//             'Content-Type': 'application/json'
-	//         }
-	//     });
-	// })());
 	// caches.match
 	if(event.request.url.includes('/match/')) return event.respondWith(fetch('/match', {
 	    	'credentials': 'same-origin'
@@ -384,14 +311,6 @@ self.addEventListener('fetch', event => {
 	        }
 	    });
 	})());
-
-	// if(new URL(event.request.url).pathname === '/stats') return event.respondWith(fetch('/stats', {
-	//     	'credentials': 'same-origin'
-	//     }).then(response => caches.open(cacheName).then(cache => {
-	// 	cache.put('/stats', response.clone());
-	// 	return response;
-	// })).catch(error => caches.open(cacheName).then(cache => cache.match('/stats'))));
-
 	// Update once everything else is finished
 	event.respondWith(fetch(event.request).then(response => caches.open(cacheName).then(cache => {
 		if(!event.request.url.includes('/api/')) cache.put(event.request.url, response.clone());

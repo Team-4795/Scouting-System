@@ -5,9 +5,6 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 // const WebSocket = require('ws');
-// Uninstall
-// const session = require('express-session');
-// const MemoryStore = require('memorystore')(session);
 const database = require('./data/database.json');
 const config = require('./config.json');
 // Run getData
@@ -37,7 +34,7 @@ function createMatch(match) {
 	});
 	database.matches = database.matches.sort((a, b) => a.number - b.number);
 	stringifedMatches = JSON.stringify(database.matches);
-	fs.writeFile('data/database.json', JSON.stringify(database, null, '\t'), () => {});
+	fs.writeFile('data/database.json', JSON.stringify(database), () => {});
 }
 
 let stringifedTeams = JSON.stringify(database.teams);
@@ -164,34 +161,6 @@ app.get('/api/matches', (request, response) => {
 	response.setHeader('Content-Type', 'application/json');
     response.send(stringifedMatches);
 });
-
-// app.post('/api/matches/create', (request, response) => {
-// 	let data = request.body;
-// 	let matchNumber = request.body.matchNumber;
-// 	let redAlliance = request.body.redAlliance;
-// 	let blueAlliance = request.body.blueAlliance;
-// 	// Security checks
-// 	matchNumber = Number(matchNumber);
-// 	redAlliance = redAlliance.replace(/\s/g, '').split(',').map(number => ({
-// 		'number': Number(number),
-// 		'stats': JSON.parse(JSON.stringify(config.defaultStats))
-// 	}));
-// 	blueAlliance = blueAlliance.replace(/\s/g, '').split(',').map(number => ({
-// 		'number': Number(number),
-// 		'stats': JSON.parse(JSON.stringify(config.defaultStats))
-// 	}));
-// 	database.matches.push({
-// 		'number': matchNumber,
-// 		'red': redAlliance,
-// 		'blue': blueAlliance
-// 	});
-// 	database.matches = database.matches.sort((a, b) => a.number - b.number);
-// 	stringifedMatches = JSON.stringify(database.matches);
-// 	fs.writeFile('data/database.json', JSON.stringify(database, null, '\t'), () => {});
-// 	response.json({
-// 		'result': 'success'
-// 	});
-// });
 
 app.get('/api/match/:number', (request, response) => {
 	// Security check
@@ -339,6 +308,6 @@ setInterval(() => {
 		database.teams.forEach(team => calculateAverages(team));
 		stringifedTeams = JSON.stringify(database.teams);
 		stringifedMatches = JSON.stringify(database.matches);
-		fs.writeFile('data/database.json', JSON.stringify(database, null, '\t'), () => {});
+		fs.writeFile('data/database.json', JSON.stringify(database), () => {});
 	}
 }, 10000);

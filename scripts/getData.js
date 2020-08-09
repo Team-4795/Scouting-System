@@ -58,6 +58,6 @@ request({
                 'stats': config.defaultStats
             }))
         })).sort((a, b) => a.number - b.number);
-        fs.writeFileSync('data/database.json', JSON.stringify(database, null, '\t'));
+        fs.writeFileSync('data/database.json', JSON.stringify(database));
     });
 });

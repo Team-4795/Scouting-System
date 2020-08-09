@@ -7,19 +7,20 @@
 			"country": "USA",
 			"name": "The Gorillas",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 1533,
@@ -28,19 +29,20 @@
 			"country": "USA",
 			"name": "Triple Strange",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 2640,
@@ -49,19 +51,20 @@
 			"country": "USA",
 			"name": "HOTBOTZ",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 2655,
@@ -70,19 +73,20 @@
 			"country": "USA",
 			"name": "The Flying Platypi",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 2682,
@@ -91,19 +95,20 @@
 			"country": "USA",
 			"name": "Boneyard Robotics 2682",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 3196,
@@ -112,19 +117,20 @@
 			"country": "USA",
 			"name": "Team SPORK",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 3336,
@@ -133,19 +139,20 @@
 			"country": "USA",
 			"name": "Zimanators",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 3506,
@@ -154,19 +161,20 @@
 			"country": "USA",
 			"name": "YETI Robotics",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 3661,
@@ -175,19 +183,20 @@
 			"country": "USA",
 			"name": "RoboWolves",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 3737,
@@ -196,19 +205,20 @@
 			"country": "USA",
 			"name": "Roto Raptors",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 3822,
@@ -217,19 +227,20 @@
 			"country": "USA",
 			"name": "Neon Kracken",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 4290,
@@ -238,19 +249,20 @@
 			"country": "USA",
 			"name": "Bots on Wheels",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 435,
@@ -259,19 +271,20 @@
 			"country": "USA",
 			"name": "Robodogs",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 4534,
@@ -280,19 +293,20 @@
 			"country": "USA",
 			"name": "Wired Wizards",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 4541,
@@ -301,19 +315,20 @@
 			"country": "USA",
 			"name": "CAV-ineers",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 4795,
@@ -322,19 +337,20 @@
 			"country": "USA",
 			"name": "EastBots",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 4935,
@@ -343,19 +359,20 @@
 			"country": "USA",
 			"name": "T-Rex",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 6177,
@@ -364,19 +381,20 @@
 			"country": "USA",
 			"name": "Atomic-Robotic-Dogs",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 6214,
@@ -385,19 +403,20 @@
 			"country": "USA",
 			"name": "PHEnix",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 6512,
@@ -406,19 +425,20 @@
 			"country": "USA",
 			"name": "Coastal CATastrophe",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 6729,
@@ -427,19 +447,20 @@
 			"country": "USA",
 			"name": "RobCoBots",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 7265,
@@ -448,19 +469,20 @@
 			"country": "USA",
 			"name": "Skeleton Crew",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 7270,
@@ -469,19 +491,20 @@
 			"country": "USA",
 			"name": "The Bandits",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 7443,
@@ -490,19 +513,20 @@
 			"country": "USA",
 			"name": "Overhills Jag-Wires",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 7463,
@@ -511,19 +535,20 @@
 			"country": "USA",
 			"name": "Incandescent Mice",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 7715,
@@ -532,19 +557,20 @@
 			"country": "USA",
 			"name": "Robo-Banditos",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 8030,
@@ -553,19 +579,20 @@
 			"country": "USA",
 			"name": "East lincoln Iron stangs",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 8304,
@@ -574,19 +601,20 @@
 			"country": "USA",
 			"name": "MaST",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		},
 		{
 			"number": 8315,
@@ -595,19 +623,20 @@
 			"country": "USA",
 			"name": "Spartan Robots",
 			"stats": {
-				"leftLine": false,
+				"leftLine": 0,
 				"autoLowBalls": 0,
 				"autoHighBalls": 0,
 				"autoInnerBalls": 0,
 				"lowBalls": 0,
 				"highBalls": 0,
 				"innerBalls": 0,
-				"climb": false,
-				"park": false,
-				"disabled": false,
-				"seriousViolation": false,
+				"climb": 0,
+				"park": 0,
+				"disabled": 0,
+				"seriousViolation": 0,
 				"notes": ""
-			}
+			},
+			"enabledMatches": 12
 		}
 	],
 	"matches": [

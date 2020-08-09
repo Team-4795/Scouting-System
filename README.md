@@ -39,15 +39,18 @@ All of the data gathered about the event is stored in `data/database.json`. It i
 > To allow data transfer when it is not possible to reconnect to the internet, this page can be used to share and recieve data through QR codes.
 
 >## Configuration Page
-> When the match schedule is not on The Blue Alliance, site admins can manually enter matches with this page.
+> When the match schedule is not on The Blue Alliance, site admins can manually enter matches on this page.
 
 # Competition Guide
 
 >## Before the Event
 > Before the competition, the server must be configured and running so that the scouts can access it. This is important because each scout needs to visit the site and authenticate while they still have an internet connection, so that it can be cached and used inside the event. A secure connection is required for the site to function, so it must be hosted with HTTPS. There are many ways to host the server, we recommend using either [Glitch](https://glitch.com/pricing "Glitch") (paid membership), [Amazon Web Services](https://aws.amazon.com/getting-started/hands-on/deploy-nodejs-web-app/ "Amazon Web Services"), or [Linode](https://www.linode.com/products/standard-linodes/ "Linode"), however there are many other hosting providers that will work as well. Glitch is useful for testing, but the free version is not recommended for use at competitions because it has rate limits and turns off when it becomes inactive.
 
->## Upon Arrival / During Matches
+>## Upon Arrival
 > Once the match schedule is released, it must be entered into the system manually or using `node scripts/getData.js`. If this done inside the event, the schedule will need to be shared among the scouts with QR codes. After that is complete, the scouts can start collecting data.
+
+>## During Matches
+> Scouts can watch the matches and record data, sharing it periodically with the drive team and strategy leads for analysis.
 
 >## After Qualifications
 > All scouts must connect to the internet so that the data they collected can be synced to the server. When internet is unavailable, this can be done with QR codes. Now the aggregated data can viewed on the site and be used for alliance selection.
@@ -60,7 +63,6 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Recache API data after new request
 
 - [ ] Service worker 404
-- [ ] Don't format database file
 - [ ] Share individual matches
 - [ ] Edit teams in matches and delete matches
 - [ ] Add and remove teams from database
@@ -97,7 +99,6 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Make documentation language consistent with TBA (keys instead of IDs)
 - [ ] Turn getAbilities into a library
 - [ ] Websocket reconnect
-- [ ] Increase saving efficiency
 - [ ] Code formatting
 - [ ] PWA
 - [ ] Routers
@@ -115,3 +116,4 @@ This is an ongoing project with the goal of making it easier for both new and ex
 - [ ] Stats and team pages auto update
 - [ ] Fallback when service workers are unavailable
 - [ ] Expand team to whole screen
+- [ ] Team eliminator for alliance selection

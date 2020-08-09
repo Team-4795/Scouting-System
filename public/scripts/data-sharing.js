@@ -63,6 +63,8 @@ const scanner = new QrScanner(document.getElementById('video-stream'), async cod
 // Stop button or disable scan button once used
 document.getElementById('scan').addEventListener('click', () => scanner.start());
 
+document.getElementById('scanning-toast').parentNode.insertBefore(scanner.$canvas, document.getElementById('scanning-toast'));
+
 document.getElementById('share').addEventListener('click', async () => {
 	$('#sharing-toast').toast('hide');
 	document.getElementById('share').disabled = true;
