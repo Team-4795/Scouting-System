@@ -1,10 +1,7 @@
-#stats-link {
-    text-decoration: underline;
-}
-
 .match {
     text-decoration: none !important;
     color: black !important;
+    user-select: none;
 }
 
 .match:hover {

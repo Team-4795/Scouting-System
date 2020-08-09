@@ -2,7 +2,7 @@ const store = {
 	'db': null,
 	'init': () => {
 		if(store.db !== null) return Promise.resolve(store.db);
-		return idb.open('match-attributes', 1, upgradeDb => {
+		return idb.open('offline-data', 1, upgradeDb => {
 			upgradeDb.createObjectStore('changes', {
 				'autoIncrement': true,
 				'keyPath': 'id'

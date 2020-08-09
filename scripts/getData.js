@@ -25,8 +25,12 @@ request({
 }, (error, response, body) => {
     if(body.Error !== undefined) throw new Error('Event ID or API key invalid');
 
-    database.teams = body.map(team => ({
-        ...team,
+    database.teams = body.map(({city, country, nickname, state_prov, team_number}) => ({
+        'number': team_number,
+        city,
+        'state': state_prov,
+        country,
+        'name': nickname,
         'stats': (() => {
             let stats = {};
             for(const stat in config.defaultStats) if(config.statTypes[stat] !== 'matchOnly') stats[stat] = config.defaultStats[stat];
@@ -44,7 +48,7 @@ request({
         'json': true
     }, (error, response, body) => {
         database.matches = body.filter(x => x.comp_level === 'qm').map(({match_number, alliances}) => ({
-            match_number,
+            'number': match_number,
             'red': alliances.red.team_keys.map(x => ({
                 'number': Number(x.slice(3)),
                 'stats': config.defaultStats
@@ -53,7 +57,7 @@ request({
                 'number': Number(x.slice(3)),
                 'stats': config.defaultStats
             }))
-        })).sort((a, b) => a.match_number - b.match_number);
+        })).sort((a, b) => a.number - b.number);
         fs.writeFileSync('data/database.json', JSON.stringify(database, null, '\t'));
     });
 });

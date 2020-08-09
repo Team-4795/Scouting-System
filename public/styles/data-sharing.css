@@ -1,0 +1,14 @@
+.toast {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#data-type {
+	border: 1px solid lightgray;
+	background-color: white;
+}
+
+#video-stream {
+	width: 100%;
+}

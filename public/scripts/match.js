@@ -6,40 +6,42 @@ navigator.serviceWorker.ready.then(registration => fetch('/api/match/' + matchNu
 }).then(match => {
     function syncMatchAttribute(alliance, team, stat, value) {
         let message = {
+            'type': 'match-attribute',
             'match': matchNumber,
             'alliance': alliance,
             'team': team,
             'stat': stat,
-            'value': value
+            'value': value,
+            'time': new Date().getTime()
         };
         store.changes('readwrite').then(changes => {
             changes.put(message);
-            registration.sync.register('sync-match-attribute');
+            registration.sync.register('sync-data');
         });
     }
 
-    function connect() {
-        let connection = new WebSocket(`ws${window.location.protocol === 'https:' ? 's' : ''}://${window.location.host}`);
+    // function connect() {
+    //     let connection = new WebSocket(`ws${window.location.protocol === 'https:' ? 's' : ''}://${window.location.host}`);
 
-        connection.onopen = () => {};
+    //     connection.onopen = () => {};
 
-        connection.onerror = (error) => {};
+    //     connection.onerror = (error) => {};
 
-        connection.onmessage = (event) => {
-            let data = JSON.parse(event.data);
-            if(data.match !== matchNumber) return;
-            let value = document.getElementById('team' + data.team + data.stat);
-            if(value.checked !== undefined) {
-                value.checked = data.value;
-            } else if(value.value !== undefined) {
-                value.value = data.value;
-            } else {
-                value.innerText = data.value;
-            }
-        };
-    }
+    //     connection.onmessage = (event) => {
+    //         let data = JSON.parse(event.data);
+    //         if(data.match !== matchNumber) return;
+    //         let value = document.getElementById('team' + data.team + data.stat);
+    //         if(value.checked !== undefined) {
+    //             value.checked = data.value;
+    //         } else if(value.value !== undefined) {
+    //             value.value = data.value;
+    //         } else {
+    //             value.innerText = data.value;
+    //         }
+    //     };
+    // }
 
-    connect();
+    // connect();
     /*document.body.addEventListener('click', (event) => {
         if(event.target !== document.body) return;
         Array.from(document.getElementsByClassName('wrapper')).forEach((box) => box.removeAttribute('target'));
@@ -49,13 +51,13 @@ navigator.serviceWorker.ready.then(registration => fetch('/api/match/' + matchNu
         let wrapper = document.createElement('div');
         let table = document.createElement('div');
         let inputs = document.createElement('div');
-        wrapper.className = alliance + ' wrapper mb-1';
+        wrapper.className = alliance + ' wrapper pt-2 pb-2 mt-2 mb-2';
         wrapper.innerHTML = '<h3><a href="/team/' + team.number + '">' + team.number + '</a></h3>';
         table.className = 'container-fluid';
         inputs.className = 'row m-0';
         for(const stat in team.stats) {
             let container = document.createElement('div');
-            container.className = 'cell col-6 col-md-4 col-lg-3 p-0';
+            container.className = 'cell col-6 col-md-4 col-lg-3 col-xl-2 p-0';
             container.innerHTML = stat + '<br>';
             if(team.stats[stat] === true || team.stats[stat] === false) {
                 let input = document.createElement('input');

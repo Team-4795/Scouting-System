@@ -1,0 +1,13 @@
+<nav id="navbar" class="navbar navbar-expand-sm navbar-light mb-1">
+	<a class="nav-link" href="/">Matches</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-wrapper">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div id="navbar-wrapper" class="collapse navbar-collapse">
+    	<a class="nav-link" href="/stats">Statistics</a>
+    	<a class="nav-link" href="/data-sharing">Data Sharing</a>
+    	<% if(session.accessLevel === 'admin') { %>
+    		<a class="nav-link" href="/configuration">Configuration</a>
+    	<% } %>
+    </div>
+</nav>

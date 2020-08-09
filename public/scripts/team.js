@@ -1,8 +1,8 @@
 fetch('/api/team/' + window.location.pathname.split('/')[2]).then(response => {
 	return response.json();
 }).then(team => {
-    document.title = `Team ${team.team_number} - Eastbots Scouting`;
-	document.getElementById('name').innerText = team.team_number + ' - ' + team.nickname;
+    document.title = `Team ${team.number} - Eastbots Scouting`;
+	document.getElementById('name').innerText = team.number + ' - ' + team.name;
 
     for(const stat in team.stats) {
         let value = document.createElement('div');
@@ -36,33 +36,33 @@ fetch('/api/team/' + window.location.pathname.split('/')[2]).then(response => {
 	    document.getElementById('matches-body').appendChild(values);
     });
 
-    if(team.additionalData) {
-        let title = document.createElement('h2');
-        title.innerText = 'Addition Data';
-        document.getElementById('info').appendChild(title);
-        let table = document.createElement('table');
-        let header = document.createElement('tr');
-        header.className = 'header';
-        table.appendChild(header);
-        let values = document.createElement('tr');
-        for(const stat in team.additionalData) {
-            let label = document.createElement('td');
-            label.innerText = stat;
-            header.appendChild(label);
-            if(typeof team.additionalData[stat] === 'string' && team.additionalData[stat].match(/^\s*data:([a-z]+\/[a-z]+(;[a-z\-]+\=[a-z\-]+)?)?(;base64)?,[a-z0-9\!\$\&\'\,\(\)\*\+\,\;\=\-\.\_\~\:\@\/\?\%\s]*\s*$/i)) {
-                let value = document.createElement('td');
-                value.style.overflow = 'scroll';
-                let image = document.createElement('img');
-                image.src = team.additionalData[stat];
-                value.appendChild(image);
-                values.appendChild(value);
-            } else {
-                let value = document.createElement('td');
-                value.innerText = team.additionalData[stat];
-                values.appendChild(value);
-            }
-        }
-        table.appendChild(values);
-        document.getElementById('info').appendChild(table);
-    }
+    // if(team.additionalData) {
+    //     let title = document.createElement('h2');
+    //     title.innerText = 'Addition Data';
+    //     document.getElementById('info').appendChild(title);
+    //     let table = document.createElement('table');
+    //     let header = document.createElement('tr');
+    //     header.className = 'header';
+    //     table.appendChild(header);
+    //     let values = document.createElement('tr');
+    //     for(const stat in team.additionalData) {
+    //         let label = document.createElement('td');
+    //         label.innerText = stat;
+    //         header.appendChild(label);
+    //         if(typeof team.additionalData[stat] === 'string' && team.additionalData[stat].match(/^\s*data:([a-z]+\/[a-z]+(;[a-z\-]+\=[a-z\-]+)?)?(;base64)?,[a-z0-9\!\$\&\'\,\(\)\*\+\,\;\=\-\.\_\~\:\@\/\?\%\s]*\s*$/i)) {
+    //             let value = document.createElement('td');
+    //             value.style.overflow = 'scroll';
+    //             let image = document.createElement('img');
+    //             image.src = team.additionalData[stat];
+    //             value.appendChild(image);
+    //             values.appendChild(value);
+    //         } else {
+    //             let value = document.createElement('td');
+    //             value.innerText = team.additionalData[stat];
+    //             values.appendChild(value);
+    //         }
+    //     }
+    //     table.appendChild(values);
+    //     document.getElementById('info').appendChild(table);
+    // }
 });

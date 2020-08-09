@@ -5,10 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "canvas": "^2.6.1",
+    "cookie-parser": "^1.4.5",
     "ejs": "^3.0.1",
     "express": "^4.16.4",
-    "express-session": "^1.17.1",
-    "memorystore": "^1.6.2",
+    "jsonwebtoken": "^8.5.1",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.8",
     "ws": "^6.2.0"

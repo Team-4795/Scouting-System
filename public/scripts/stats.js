@@ -7,7 +7,7 @@ function display() {
     
     teams.forEach(team => {
         let values = document.createElement('tr');
-        values.innerHTML = '<td><a href="/team/' + team.team_number + '"><b>' + team.team_number + '</b></a></td>';
+        values.innerHTML = '<td><a href="/team/' + team.number + '"><b>' + team.number + '</b></a></td>';
         for(const stat in team.stats) {
             let value = document.createElement('td');
             value.className = 'stat';
@@ -48,12 +48,12 @@ fetch('/api/teams').then(response => {
 }).then(data => {
     teams = data;
     teams = teams.sort((a, b) => {
-        return a.team_number - b.team_number;
+        return a.number - b.number;
     });
     csv = 'team,' + Object.keys(teams[0].stats).join(',') + '\n' + teams.map(team => {
         let stats = [];
         for(const stat in team.stats) stats.push(JSON.stringify(team.stats[stat]).replace(/\n/g, ' '));
-        return team.team_number + ',' + stats.join(',');
+        return team.number + ',' + stats.join(',');
     }).join('\n');
 
     let header = document.createElement('tr');
@@ -82,7 +82,7 @@ fetch('/api/teams').then(response => {
 
     document.getElementById('reset').addEventListener('click', (event) => {
         teams = teams.sort((a, b) => {
-            return a.team_number - b.team_number;
+            return a.number - b.number;
         });
         display();
     });

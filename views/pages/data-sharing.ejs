@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Sharing - Eastbots Scouting</title>
+        <%- include('../partials/header') %>
+        <link rel="stylesheet" href="/styles/data-sharing.css" type="text/css">
+    </head>
+    <body>
+        <%- include('../partials/navbar') %>
+        <div class="container-fluid">
+        	<h2>Data Sharing</h2>
+            <div class="row">
+                <div class="col-sm position-relative">
+                    <h3>Scan</h3>
+                    <button id="scan" class="btn btn-primary mb-1">Scan</button>
+                    <br>
+                    <video id="video-stream"></video>
+                    <div class="toast" id="scanning-toast" data-delay="1500">
+                        <div class="toast-header">
+                            <strong class="mr-auto">Code Scanned</strong>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            Successful scanned QR code
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h3>Share</h3>
+                    <button id="share" class="btn btn-primary">Share</button>
+                    <select id="data-type">
+                        <!-- <option value="teams">Teams</option> -->
+                        <option value="matches">Match Schedule</option>
+                        <option value="changes">Data Changes</option>
+                    </select>
+                    <br>
+                    <img id="qr-code">
+                    <div id="progress-wrapper" class="progress" hidden="true">
+                        <div id="progress" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+                    </div>
+                    <div class="toast" id="sharing-toast" data-autohide="false">
+                        <div class="toast-header">
+                            <strong class="mr-auto">Sharing Complete</strong>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            All changes have finished sharing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('../partials/footer') %>
+        <script src="/scripts/qrious.js"></script>
+        <script src="/scripts/qr-scanner.js"></script>
+        <script src="/scripts/qr-scanner-worker.js"></script>
+        <script src="/scripts/idb.js"></script>
+        <script src="/scripts/store.js"></script>
+        <script src="/scripts/data-sharing.js"></script>
+    </body>
+</html>

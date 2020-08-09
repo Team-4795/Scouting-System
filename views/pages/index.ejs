@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home - Eastbots Scouting</title>
+        <title>Matches - Eastbots Scouting</title>
         <%- include('../partials/header') %>
         <link rel="stylesheet" href="/styles/index.css" type="text/css">
     </head>
     <body>
+        <%- include('../partials/navbar') %>
         <div class="container-fluid">
-        	<h1>Eastbots Scouting System</h1>
-       		<h2>
-                <a id="stats-link" href="/stats">Statistics</a>
-            </h2>
-            <div id="matches" class="container-fluid p-0"></div>
+        	<h2>Match Schedule</h2>
+            <div id="matches" class="container-fluid p-0 mb-1"></div>
         </div>
         <%- include('../partials/footer') %>
-        <script src="scripts/index.js"></script>
+        <script src="/scripts/index.js"></script>
     </body>
 </html>

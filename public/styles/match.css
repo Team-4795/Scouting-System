@@ -2,18 +2,6 @@ h3 {
 	margin: 0px;
 }
 
-button {
-	width: 50px;
-	height: 50px;
-	font-size: x-large;
-	border: 1px solid rgb(200, 200, 200);
-	background-color: rgb(250, 250, 250);
-}
-
-button:hover {
-	background-color: rgb(220, 220, 220);
-}
-
 input[type="checkbox"] {
 	/*-webkit-appearance: none;*/
 	width: 50px;
@@ -63,6 +51,18 @@ input[type="checkbox"] {
 	font-weight: bold;
 }
 
+.cell button {
+	width: 50px;
+	height: 50px;
+	font-size: x-large;
+	border: 1px solid rgb(200, 200, 200);
+	background-color: rgb(250, 250, 250);
+}
+
+.cell button:hover {
+	background-color: rgb(220, 220, 220);
+}
+
 .red {
     background-color: rgb(255, 75, 75);
 }
@@ -75,6 +75,7 @@ input[type="checkbox"] {
 	width: 80%;
 	min-height: 50px;
 	max-height: 50px;
+	border-radius: 5px;
 	font-family: 'Roboto', sans-serif;
 }
 

@@ -145,7 +145,7 @@ function getAbilities(teamId, match, zebraData) {
         });
         // fs.writeFile(`data/${teamId}.png`, canvas.toDataURL().replace(/^data:image\/png;base64,/, ''), 'base64', () => {});
         teamAbilites[teamId].autoShape = canvas.toDataURL();
-        database.teams.filter(number => number.team_number === Number(teamId.slice(3)))[0].additionalData = teamAbilites[teamId];
+        database.teams.filter(number => number.number === Number(teamId.slice(3)))[0].additionalData = teamAbilites[teamId];
     }
     // Fill in match data
     fs.writeFileSync('data/database.json', JSON.stringify(database, null, '\t'));
